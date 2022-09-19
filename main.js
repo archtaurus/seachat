@@ -6,8 +6,8 @@ const { version, description } = require('./package.json')
 program
     .version(version)
     .description(description)
-    .option('-h, --host <host>', 'set server\'s host', '0.0.0.0')
-    .option('-p, --port <port>', 'set server\'s port', 8000)
+    .option('-h, --host <host>', 'set server\'s host', process.env.host || 'localhost')
+    .option('-p, --port <port>', 'set server\'s port', process.env.port || 8000)
     .parse()
 
 const { host, port } = program.opts()

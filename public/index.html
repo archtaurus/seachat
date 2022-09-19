@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SeaChat</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/style.css" />
-    </head>
 
-    <body>
-        <div id="seachat">
-            <header>
-                <h1>SeaChat</h1>
-            </header>
-            <main id="mainContainer">
-                <div id="usernamesContainer"></div>
-                <div id="messagesContainer"></div>
-            </main>
-            <form id="messageForm">
-                <input type="text" id="messageInput" autocomplete="off" placeholder="type and press enter to send your message..." />
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <script src="/socket.io/socket.io.min.js"></script>
-        <script src="/client.js"></script>
-    </body>
+<head>
+    <title>SeaChat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="seachat">
+        <header>
+            <h1>SeaChat</h1>
+        </header>
+        <main id="mainContainer">
+            <div id="usernamesContainer"></div>
+            <div id="messagesContainer"></div>
+        </main>
+        <form id="messageForm">
+            <input type="text" id="messageInput" autocomplete="off"
+                placeholder="type and press enter to send your message..." />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.min.js"></script>
+    <script src="client.js"></script>
+</body>
+
 </html>

@@ -2,7 +2,7 @@
     "name": "seachat",
     "description": "A chat app built on express and socket.io.",
     "version": "1.0.1",
-    "main": "server.js",
+    "main": "main.js",
     "scripts": {
         "start": "node main.js",
         "dev": "nodemon main.js",
@@ -18,8 +18,9 @@
     ],
     "keywords": [
         "socket.io",
-        "chat app",
-        "express"
+        "express",
+        "chat",
+        "app"
     ],
     "author": "Zhao Xin <7176466@qq.com>",
     "license": "MIT",
